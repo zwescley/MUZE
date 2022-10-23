@@ -1,0 +1,272 @@
+
+
+.third {
+    /* border-color: #610536;
+    color: #fff;
+    box-shadow: 0 0 40px 40px #610536 inset, 0 0 0 0 #610536;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out; */
+}
+
+.third:hover {
+    box-shadow: 0 0 10px 0 #610536, 0 0 10px 4px #610536;
+    /* background-color: #610536;
+    color: #fff; */
+}
+
+.link {
+    margin: 5px;
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+}
+
+.link:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #610536;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.link:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+
+
+/*
+
+------ BOTÃO EXPANDIR -------
+
+button {
+  color: white;
+  background: blue;
+  transition: transform 1s;
+  transform: translateX(0) scale(0.5);
+}
+
+button:hover,
+button:focus {
+  background: red;
+  transform: translateX(10px) scale(1.2);
+  
+
+------FAZER UM BOTÃO MUDAR DE COR COM O MOUSE EM CIMA------
+
+button {
+    color: white;
+    background: blue;
+    transition: background 1s;
+  }
+  
+  button:hover,
+  button:focus {
+    background: red;
+  } */
+
+  .box-contato {
+    width:100%;
+    float:left;
+  }
+  .form-contato {
+    
+    width: 100%;
+    float:left ;
+    font-family: 'Lato';
+    font-weight: 400;
+    padding: 1em;
+  }
+  .form-contato label { 
+      width:100%; 
+      float:left; 
+      margin-bottom:10px; 
+  }
+  .form-control, input, select, textarea {
+    
+    padding: 15px 15px;
+    width: 100%;
+    background-color: #d9d9d9;
+    color: #610536;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 6px;
+    outline:none ;
+  }
+  .btn {
+      font-family: inherit;
+      font-size: 1.2em;
+      color: #610536;
+      background: transparent;
+      text-decoration: none;
+      padding: 0.8em 2em;
+      display: inline-block;
+      margin-right: 5px;
+      letter-spacing: 3px;
+      font-weight: 700;
+      outline: none;
+      position: relative;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      transition: all 0.3s;
+      cursor: pointer;
+      width:100%;
+  }
+  .btn:after {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      transition: all 0.3s;
+  }
+  /* Setas */
+  .btn-setas {
+      
+      border-radius: 6px;
+      border: 2px solid #555353;
+      color: #610536;
+      overflow: hidden;
+  }
+  .btn-setas:active {
+      border-color: #610536;
+      color: #610536;
+  }
+  .btn-setas:hover {
+      background: #610536;
+      color:#610536; 
+  }
+  .btn-setas:before {
+      position: absolute;
+      height: 50%;
+      font-size:0.7em;
+      line-height: 3.5;
+      color: #610536;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      transition: all 0.3s;
+  }
+  /* Seta A */
+  .seta-a:before {
+      left: 60%;
+      top: 50%;
+      opacity: 0;
+  }
+  .seta-a:hover:before {
+      left: 59%;
+      opacity: 1;
+  }
+  .form-endereco {
+    
+    width: 100%;
+    float: left;
+    padding: 1em;
+  }
+  /* Location, Phone, Email Section */
+  .contact-list {
+    list-style-type: none;
+  }
+  .list-item {
+    line-height: 3;
+    color: #610536;
+  }
+  .contact-text {
+    
+    font-size: 1em;
+    letter-spacing: 1.9px;
+    color: #610536;
+  }
+  .contact-text a {
+    color: #610536;
+    text-decoration: none;
+    transition-duration: 0.2s;
+  }
+  .contact-text a:hover {
+    color: #610536;
+    text-decoration: none;
+  }
+
+  input::placeholder {
+    color: #610536;
+  }
+  /* Social Media Icons */
+  /* .social-media-list {
+    position: relative;
+    font-size: 22px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .social-media-list li a {
+    
+    color: #624555;
+    text-decoration: none;
+  }
+  .social-media-list li {
+    position: relative; 
+    display: inline-block; 
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    color: #c196ad;
+    background-color: #c973a1;
+    cursor: pointer; 
+    transition: all .2s ease-in-out;
+  }
+  .social-media-list li:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 50px;
+    border-radius: 50%;
+    opacity: 0;
+    box-shadow: 0 0 0 1px #753557;
+    transition: all .3s ease-in-out;
+  }
+  .social-media-list li:hover {
+    background-color: #7a7477; 
+  }
+  .social-media-list li:hover:after {
+    opacity: 1;  
+    transform: scale(1.12);
+    transition-timing-function: cubic-bezier(0.37,0.74,0.15,1.65);
+  }
+  .social-media-list li:hover a {
+    color: #793f5d;
+  }
+  input::placeholder {
+    color: #610536;
+  }
+
+  /*Responsivo*/
+
+  @media screen and(max-width:498px){
+    /* .colunas{
+      width: 100%;
+      background-color: #610536;
+    } */
+  }
+
+  /*960PX BREAKPOINT*/
+  @media (min-width:60em){
+      .form-contato  { width: 50%; }
+      .form-endereco { width: 50%; }
+      
+   
+  }
+  /*1280PX BREAKPOINT*/
+  @media (min-width:80em){
+      .form-contato  { padding: 2em; }
+      .form-endereco { padding: 2em; }
+   
+  }
